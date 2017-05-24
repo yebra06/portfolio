@@ -1,12 +1,11 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "Portforlio",
+  "description": "My portfolio of projects.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --config webpack.config.js",
-    "build": "webpack"
+    "start": "webpack-dev-server"
   },
   "repository": "git+https://github.com/yebra06/portfolio.git",
   "author": "Alfredo Yebra Jr.",
