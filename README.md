@@ -18,3 +18,7 @@ yarn install
 yarn start
 ```
 
+Please checkout my work here -> http://localhost:3001/
+> **Please Note**
+>> I am currently still building, so you may see an app in construction. But stay tuned!
+
