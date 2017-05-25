@@ -1,10 +1,16 @@
 import React from 'react';
 
+import Header from '../components/Header.jsx';
+
 export default class App extends React.Component {
     render() {
         return (
-            <div style={{textAlign: 'center'}}>
-                <h1>Portfolio</h1>
-            </div>);
+            <div>
+                <Header/>
+                <div className="container">
+
+                </div>
+            </div>
+        );
     }
 }
