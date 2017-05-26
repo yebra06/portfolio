@@ -1,5 +1,14 @@
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .header-item {
+    max-width: 75%;
+  }
+
   .title {
-    text-align: center;
+    font-size: 50px;
+    color: $main-red;
   }
 }
