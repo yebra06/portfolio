@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'header';
+@import 'navbar';
 
 // Universal box sizing with inheritance
 // See: https://css-tricks.com/box-sizing/
@@ -22,6 +23,10 @@ body {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
 }
 
 h1 {

@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: $navbar-height;
+  width: auto;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
+
+  .navbar-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:nth-child(2) {
+      flex: 3;
+    }
+  }
+
+  .nav-link {
+    margin: 0 40px;
+  }
+
+  .social-icon {
+
+    &:first-child {
+      margin-right: 20px;
+    }
+  }
+}
