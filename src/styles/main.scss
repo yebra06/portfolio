@@ -36,3 +36,15 @@ h1 {
 .container {
   flex: 1;
 }
+
+.hide-mobile-md {
+  @media (max-width: $screen-md) {
+    display: none !important;
+  }
+}
+
+.show-mobile-md {
+  @media (min-width: $screen-md) {
+    display: none !important;
+  }
+}

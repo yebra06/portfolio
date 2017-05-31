@@ -12,9 +12,10 @@ export default class App extends Component {
                 <div className="container">
                     <nav className="navbar">
                         <div className="navbar-section brand">
-                            <Link to="/">Alfredo Yebra Jr.</Link>
+                            <Link to="/" className="show-mobile-md">AYJ</Link>
+                            <Link to="/" className="hide-mobile-md">Alfredo Yebra Jr.</Link>
                         </div>
-                        <div className="navbar-section">
+                        <div className="navbar-section hide-mobile-md">
                             <Link className="nav-link" to="/about">About</Link>
                             <Link className="nav-link" to="/">Projects</Link>
                             <Link className="nav-link" to="/">Work</Link>
@@ -30,6 +31,9 @@ export default class App extends Component {
                                     <FontAwesome name='linkedin' size='lg'/>
                                 </a>
                             </div>
+                        </div>
+                        <div className="navbar-section show-mobile-md">
+                            <FontAwesome name='bars' size='lg'/>
                         </div>
                     </nav>
                     <Route exact path="/" component={ Home } />
