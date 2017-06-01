@@ -36,6 +36,7 @@ module.exports = {
         ],
     },
     devServer: {
+        inline: true,
         port: 3001
     },
     plugins: [
