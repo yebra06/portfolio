@@ -14,11 +14,35 @@
 
     &:nth-child(2) {
       flex: 3;
+      display: flex;
+      align-items: stretch;
+    }
+
+    .brand {
+      align-items: stretch;
+      margin-right: auto;
+      margin-left: 30px;
+    }
+
+    .hamburger {
+      margin-right: 30px;
+      margin-left: auto;
+
+      .line {
+        width: 30px;
+        height: 3px;
+        background-color: $main-red;
+        display: block;
+        margin: 6px auto;
+      }
     }
   }
 
   .nav-link {
     margin: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .social-icon {
@@ -26,7 +50,7 @@
     line-height: 22px;
 
     &:first-child {
-      margin-right: 20px;
+      margin-right: 40px;
     }
 
     &:hover {
