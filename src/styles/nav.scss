@@ -15,6 +15,24 @@
     &:nth-child(2) {
       flex: 3;
     }
+
+    .brand {
+      margin-right: auto;
+      margin-left: 30px;
+    }
+
+    .hamburger {
+      margin-right: 30px;
+      margin-left: auto;
+
+      .line {
+        width: 30px;
+        height: 3px;
+        background-color: $main-red;
+        display: block;
+        margin: 6px auto;
+      }
+    }
   }
 
   .nav-link {
