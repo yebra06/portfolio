@@ -9,19 +9,43 @@
   .navbar-section {
     flex: 1;
     display: flex;
-    justify-content: center;
     align-items: center;
+
+    .nav-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &:first-child, &:nth-child(2) {
+      align-items: stretch;
+    }
+
+    &:first-child {
+      margin-right: auto;
+      margin-left: 30px;
+    }
 
     &:nth-child(2) {
       flex: 3;
       display: flex;
-      align-items: stretch;
+      justify-content: center;
+
+      .nav-link {
+        margin: 0 40px;
+      }
     }
 
-    .brand {
-      align-items: stretch;
-      margin-right: auto;
-      margin-left: 30px;
+    &:nth-child(3) {
+      justify-content: flex-end;
+
+      .social-icon:last-child {
+        margin: 0 40px;
+      }
+
+      .social-icon:hover {
+        color: $main-red;
+      }
     }
 
     .hamburger {
@@ -35,26 +59,6 @@
         display: block;
         margin: 6px auto;
       }
-    }
-  }
-
-  .nav-link {
-    margin: 0 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .social-icon {
-    overflow: hidden;
-    line-height: 22px;
-
-    &:first-child {
-      margin-right: 40px;
-    }
-
-    &:hover {
-      color: $main-red;
     }
   }
 }
