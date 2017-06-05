@@ -3,8 +3,7 @@
   justify-content: space-between;
   height: $navbar-height;
   width: auto;
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
+  background-color: $main-red;
 
   .navbar-section {
     flex: 1;
@@ -15,6 +14,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      color: $main-white;
     }
 
     &:first-child, &:nth-child(2) {
@@ -23,7 +23,7 @@
 
     &:first-child {
       margin-right: auto;
-      margin-left: 30px;
+      margin-left: $gutter-lg;
     }
 
     &:nth-child(2) {
@@ -32,33 +32,27 @@
       justify-content: center;
 
       .nav-link {
-        margin: 0 40px;
+        margin: 0 $gutter * 2;
       }
     }
 
     &:nth-child(3) {
       justify-content: flex-end;
-
-      .social-icon:last-child {
-        margin: 0 40px;
-      }
-
-      .social-icon:hover {
-        color: $main-red;
-      }
     }
 
-    .hamburger {
-      margin-right: 30px;
-      margin-left: auto;
-
-      .line {
-        width: 30px;
-        height: 3px;
-        background-color: $main-red;
-        display: block;
-        margin: 6px auto;
+    &:last-child {
+      .idk {
+        margin-right: $gutter-lg;
+        margin-left: auto;
       }
+    }
+  }
+
+  .social-icon {
+    color: $main-white;
+
+    &:last-child {
+      margin: 0 $gutter * 2;
     }
   }
 }
