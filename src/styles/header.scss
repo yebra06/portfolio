@@ -1,14 +1,77 @@
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+//.header {
+//  padding-top: $gutter;
+//  display: flex;
+//  align-items: center;
+//  justify-content: center;
+//  color: $main-grey;
+//
+//  .header-item {
+//    max-width: 50%;
+//  }
+//
+//  .small-title {
+//    u {
+//      text-decoration: none;
+//      border-bottom: 3px solid $main-grey;
+//    }
+//  }
+//
+//  .title {
+//    font-size: 35px;
+//  }
+//}
 
-  .header-item {
-    max-width: 75%;
+.header {
+
+  h1 {
+    @media (max-width: $screen-md) {
+      font-size: 20px;
+    }
   }
 
-  .title {
-    font-size: 50px;
-    color: $main-red;
+  small {
+    @media (max-width: $screen-xs) {
+      font-size: 10px;
+    }
+  }
+
+  .intro-card-outter {
+    display: flex;
+    justify-content: center;
+    padding: 30px 40px;
+  }
+
+  .intro-card {
+    background-color: $main-grey;
+    color: $main-white;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .intro-card-info {
+    display: flex;
+    flex-flow: column;
+
+    button {
+      margin-top: auto;
+      width: 100px;
+      align-self: center;
+      background-color: transparent;
+      color: $main-red;
+    }
+
+    @media (max-width: $screen-md) {
+      h4 {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .info-card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    padding-right: 30px;
   }
 }
